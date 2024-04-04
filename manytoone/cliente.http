@@ -1,64 +1,64 @@
 ###
-### Recurso Categoria
+### Recurso biblioteca
 ###
 
-### Listar todas as categorias
-GET http://localhost:8080/categoria HTTP/1.1
+### Listar todas as bibliotecas
+GET http://localhost:8080/biblioteca HTTP/1.1
 
-### Obter uma categoria específica por ID
-GET http://localhost:8080/categoria/1 HTTP/1.1
+### Obter uma biblioteca específica por ID
+GET http://localhost:8080/biblioteca/1 HTTP/1.1
 
-### Criar uma nova categoria
-POST http://localhost:8080/categoria HTTP/1.1
+### Criar uma nova biblioteca
+POST http://localhost:8080/biblioteca HTTP/1.1
 Content-Type: application/json
 
 {
-        "nome": "Nome da Categoria"
+        "nome": "Nome da biblioteca"
 }
 
-### Atualizar uma categoria existente
-PUT http://localhost:8080/categoria/1 HTTP/1.1
+### Atualizar uma biblioteca existente
+PUT http://localhost:8080/biblioteca/1 HTTP/1.1
 Content-Type: application/json
 
 {
-        "nome": "Novo Nome da Categoria"
+        "nome": "Novo Nome da Biblioteca"
 }
 
-### Deletar uma categoria
-DELETE http://localhost:8080/categoria/1 HTTP/1.1
+### Deletar uma biblioteca
+DELETE http://localhost:8080/biblioteca/1 HTTP/1.1
 
 
 ###
-### Recurso Item
+### Recurso Livro
 ###
 
-### Get all items
-GET http://localhost:8080/item
+### Get all livros
+GET http://localhost:8080/livro
 
-### Get item by id
-GET http://localhost:8080/item/1
+### Get livro by id
+GET http://localhost:8080/livro/1
 
-### Create a new item
-POST http://localhost:8080/item
+### Create a new livro
+POST http://localhost:8080/livro
 Content-Type: application/json
 
 {
-        "nome": "Item Name",
-        "categoria": {
+        "nome": "livro Name",
+        "biblioteca": {
                 "id": 2
         }
 }
 
-### Update an existing item
-PUT http://localhost:8080/item/10
+### Update an existing livro
+PUT http://localhost:8080/livro/1
 Content-Type: application/json
 
 {
-        "nome": "Updated Item Name",
-        "categoria": {
+        "nome": "Updated livro Name",
+        "biblioteca": {
                 "id": 3
         }
 }
 
-### Delete an item
-DELETE http://localhost:8080/item/1
+### Delete an livro
+DELETE http://localhost:8080/livro/1
