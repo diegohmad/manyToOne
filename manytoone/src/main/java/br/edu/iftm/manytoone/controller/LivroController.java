@@ -16,7 +16,7 @@ import br.edu.iftm.manytoone.domain.Livro;
 import br.edu.iftm.manytoone.service.LivroService;
 
 @RestController
-@RequestMapping("/item")
+@RequestMapping("/livro")
 class LivroController {
 
         @Autowired
@@ -33,13 +33,13 @@ class LivroController {
         }
 
         @PostMapping
-        public Livro create(@RequestBody Livro item) {
-                return service.create(item);
+        public Livro create(@RequestBody Livro livro) {
+                return service.create(livro);
         }
 
         @PutMapping("{id}")
-        public Livro update(@PathVariable("id") Long id, @RequestBody Livro item) {
-                return service.update(id, item);
+        public Livro update(@PathVariable("id") Long id, @RequestBody Livro livro) {
+                return service.update(id, livro);
         }
 
         @DeleteMapping("{id}")

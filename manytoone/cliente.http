@@ -45,20 +45,20 @@ Content-Type: application/json
 {
         "nome": "livro Name",
         "biblioteca": {
-                "id": 2
+                "id": 1
         }
 }
 
 ### Update an existing livro
-PUT http://localhost:8080/livro/1
+PUT http://localhost:8080/livro/2
 Content-Type: application/json
 
 {
         "nome": "Updated livro Name",
         "biblioteca": {
-                "id": 3
+                "id": 1
         }
 }
 
 ### Delete an livro
-DELETE http://localhost:8080/livro/1
+DELETE http://localhost:8080/livro/2
